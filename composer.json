@@ -1,0 +1,24 @@
+{
+  "name": "laraws/design-patterns-php",
+  "description": "Design patterns build by PHP",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "laraws",
+      "email": "larawsw@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "psr/http-message": "^1.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "classmap": ["Behavioral", "Creational", "Structural"]
+  }
+}
