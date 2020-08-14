@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DesignPatterns\Creational\Encapsulation;
+namespace DesignPatterns\Creational\Oop;
 
 class Phone
 {
@@ -10,18 +10,24 @@ class Phone
 
     private string $model;
 
-    private float $size;
+    protected float $size;
 
-    private int $storage;
+    protected int $storage;
 
-    private int $memory;
+    protected int $memory;
 
-    private int $battery;
+    public int $battery;
 
     public function __construct(string $brand, string $model)
     {
         $this->brand = $brand;
         $this->model = $model;
+    }
+
+    public function setColor(string $color): self
+    {
+        $this->color = $color;
+        return $this;
     }
 
 
